@@ -10,5 +10,5 @@ test('GET /health returns ok', async () => {
 test('GET / returns greeting', async () => {
   const res = await request(app).get('/');
   expect(res.statusCode).toBe(200);
-  expect(res.body.message).toBe('Hello from Jenkins CI WRONG');
+  expect(res.body.message).toBe('Hello from Jenkins CI');
 });
