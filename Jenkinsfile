@@ -4,6 +4,7 @@ pipeline {
     options {
         timestamps()
         timeout(time: 10, unit: 'MINUTES')
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '5'))
     }
 
     triggers {
