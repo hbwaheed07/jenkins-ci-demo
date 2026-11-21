@@ -56,6 +56,9 @@ The `.png` files in this repository show the evidence:
 - `5-success-console.png`: console output ending in Finished: SUCCESS
 
 ## Run locally
+## Artifact retention
+
+The Jenkinsfile uses a build discarder. Jenkins keeps the last 10 builds and the artifacts of the last 5 builds, so old packages do not fill the disk.
 
 ```
 npm install
